@@ -1,65 +1,854 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- bootstrap css link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <link rel="stylesheet" href="index.css">
+<head>
+  <meta charset="utf-8">
+  <meta content="height=device-height, initial-scale=1.0" name="viewport">
+
+  <title>UOE Talent Hub </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!--  CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .card-img {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* This creates a 16:9 aspect ratio, adjust as needed */
+    }
+    
+    .card-img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+
+
+  
 </head>
+
 <body>
-  <section class="section1 container-fluid p-0">
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+
+<!-- Header -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1>Talent<span>Hub Festival</span></h1>
+    </a>
+
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        
+        <ul class="nav">
+          <li class="nav-item Drivers">
+            <a class="nav-link" >
+              <span>Activities</span>
+              <i class="bi bi-chevron-down dropdown-indicator"></i>
+            </a>
+            <ul class="dropdown-menu">
+
+              <li class="dropdown">
+                <a class="dropdown-item" >
+                  <span>Our Main Activities</span>
+                  <i class="bi bi-chevron-down dropdown-indicator"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" >Comedy performances</a></li>
+                  <li><a class="dropdown-item" >Music performances</a></li>
+                  <li><a class="dropdown-item" >Dance performances</a></li>
+                  <li><a class="dropdown-item" >Spoken word and poetry</a></li>
+                  <li><a class="dropdown-item" >Art exhibitions </a></li>
+                  <li><a class="dropdown-item" >Modeling </a></li>
+                  <li><a class="dropdown-item" >Screen filming </a></li>
+                  <li><a class="dropdown-item" >many more .... </a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+        </ul>
+        
+        <!-- <li><a href="contact.html">Contact</a></li> -->
+        <!-- <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li> -->
+      </ul>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+<!-- End Header -->
+
+  <!--  Hero Section -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Prepared by: <br><span class="fw-normal">Felix & Eugene</span></h2>
+          <h2 data-aos="fade-up">Presented to: <br><span class="fw-normal">Universtity of Eldoret</span></h2>
+          <p data-aos="fade-up" data-aos-delay="100">This initiative focuses on hosting a talent show, known as UOE Talent Hub Festivals, to showcase skills in areas such as comedy, music, acting, modeling, and screen filming.</p>
+
+          <div class="d-flex justify-content-between bg-white border border-secondary rounded p-2">
+            <p id="welcome-message" class="fw-bold text-black pt-4" style="font-size: 1.5rem;color: #000;font-weight: bold; padding-top: 1rem; text-align: center;">
+              Register now to showcase your talent!
+            </p>
+            <button id="get-started-btn" class="btn btn-primary">
+                <a  style="color: black;">Cooming soon</a>
+            </button>
+            <button id="logout-btn" class="btn btn-primary" style="display: none;" onclick="logoutUser()">
+                Log Out
+            </button>
+        </div>
+        
+        
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Audience Engagement</p>
+              </div>
+            </div><!-- End Stats Item -->
+          
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Performancers</p>
+              </div>
+            </div><!-- End Stats Item -->
+          
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Total Episodes</p>
+              </div>
+            </div><!-- End Stats Item -->
+          
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Current Season</p>
+              </div>
+            </div><!-- End Stats Item -->
+          
+          </div>
+        
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+        </div>
+
       </div>
-  
-      <!-- Slideshow -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/pic/closeup.jpeg" alt="s">
-          <div class="carousel-caption hidden">
-            <h3>Welcome to Los Angeles</h3>
-            <p>We had such a great time in LA!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/pic/people.jpeg" alt="">
-          <div class="carousel-caption hidden">
-            <h3>Welcome to Los Angeles</h3>
-            <p>We had such a great time in LA!</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/pic/stage.jpeg" alt="">
-          <div class="carousel-caption hidden">
-            <h3>Welcome to Los Angeles</h3>
-            <p>We had such a great time in LA!</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
   </section>
-  
+  <!-- End Hero Section -->
+
+  <!---Start log in page-->
   
 
+  <main id="main">
 
-  <!-- bootstrap js link -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
+    <!--Featured Services Section -->
+    <section id="featured-services" class="featured-services">
+      <div class="section-header">
+        <span>The Project</span>
+        <h2>The Project </h2>
+
+      </div>
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div>
+              <h4 class="title">Comedy</h4>
+              <p class="description">Stand-up comedians will entertain with humor on everyday life and societal issues, while skits and improvisation will bring spontaneous laughter and audience interaction.</p>
+            </div>
+          </div>
+   <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            
+            <div>
+              <h4 class="title">Music</h4>
+              <p class="description">Singers, instrumentalists, and bands will perform diverse genres, with opportunities for original compositions and audience sing-alongs to create a dynamic musical experience.</p>
+              
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            
+            <div>
+              <h4 class="title">Acting</h4>
+              <p class="description">Participants will present plays, monologues, and short films, showcasing their dramatic abilities while engaging the audience with behind-the-scenes storytelling.</p>
+              
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            
+            <div>
+              <h4 class="title">Modeling</h4>
+              <p class="description">Aspiring models will shine on the runway with diverse styles, participate in themed competitions, and learn from workshops on confidence and presentation.</p>
+              
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            
+            <div>
+              <h4 class="title">Spoken Word and Poetry</h4>
+              <p class="description">Poets and spoken word artists will perform at open mics and poetry slams, with workshops and themed showcases to inspire creativity and deep conversations.</p>
+              
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            
+            <div>
+              <h4 class="title">Screen Filming</h4>
+              <p class="description">Short film screenings, workshops on filmmaking, and a "48-hour film challenge" will encourage creativity, storytelling, and collaboration among participants.</p>
+              
+            </div>
+          </div>
+
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            
+            <div>
+              <h4 class="title">Art Exhibitions</h4>
+              <p class="description">Art displays will include paintings, photography, and digital art, with live demonstrations, collaborative projects, and opportunities to purchase or commission artwork.</p>
+              
+            </div>
+          </div>
+          <!-- End Service Item -->
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            
+            <div>
+              <h4 class="title">Workshops and Mentorship</h4>
+              <p class="description">Interactive sessions will build skills in public speaking and stage presence, while mentorship and networking will connect participants with industry experts.</p>
+              
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            
+            <div>
+              <h4 class="title">Audience Engagement</h4>
+              <p class="description">Attendees will vote for their favorite acts, participate in talent challenges, and connect with performers through meet-and-greet opportunities and social media-friendly spaces.</p>
+              
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Featured Services Section -->
+
+    <!--  About Us Section  -->
+    <section id="about" class="about pt-0">
+      <div  class="section-header">
+        <span>About us</span>
+        <h2>About us</h2>
+
+      </div>
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="/image/question.jpeg" class="img-fluid" alt="">
+            <a href="https://youtu.be/O_mo6oIBc4E?si=XND-HCeP6xj7yfxR" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>About Us</h3>
+            <p>
+              We are a passionate group of students from the University of Eldoret actively involved in co-curricular activities, particularly the drama club. Our vision is to create impactful projects that not only entertain but also encourage creative expression.
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>Talent Showcase</h5>
+                  <p>The event serves as a platform for individuals to display their unique skills, whether in music, comedy, acting, modeling, or screen filming. Each performance is an opportunity to connect with the audience emotionally, inspiring and entertaining them.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>Collaboration</h5>
+                  <p>Participants will interact with fellow talents, sharing ideas, experiences, and insights. This collaboration fosters teamwork and builds long-lasting friendships</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Networking Opportunities</h5>
+                  <p>The festival offers a chance for performers to meet industry professionals, mentors, and potential sponsors, creating valuable connections for future growth.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <!--  Services Section -->
+    <section id="objective" class="services pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div  class="section-header">
+          <span>Our Objective</span>
+          <h2>Our Objective</h2>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="/image/discover hidden talents.jpeg" alt=""  class="img-fluid">
+              </div>
+              <h3><a  class="stretched-link">Discover Hidden Talents</a></h3>
+              <p>The project aims to uncover and showcase unique abilities in individuals, providing a stage for talents that might otherwise go unnoticed. By creating a welcoming platform, it seeks to encourage participants from all backgrounds to step forward, express themselves, and explore their potential. This objective emphasizes inclusivity and diversity, ensuring every participant has an equal chance to shine.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="/image/Nurture and Develop Skills.jpeg"  alt="" class="img-fluid bg-success">
+              </div>
+              <h3><a  class="stretched-link">Nurture and Develop Skills</a></h3>
+              <p>
+                Beyond identifying talent, the festival focuses on skill-building and growth. Through workshops, mentorship programs, and constructive feedback, participants will have the opportunity to refine their abilities. This objective promotes personal development by equipping individuals with the tools and knowledge they need to excel in their chosen creative fields.</p>
+            </div>
+          </div>
+          <!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="/image/Promote Cultural Exchange.jpeg"  alt="" class="img-fluid">
+              </div>
+              <h3><a  class="stretched-link">Promote Cultural Exchange</a></h3>
+              <p>
+                The event fosters cultural diversity by featuring performances and expressions from different traditions, styles, and perspectives. It provides a platform for participants and audiences to celebrate their heritage while learning about others. This objective strengthens community bonds and encourages unity through the shared experience of creativity.</p>
+            </div>
+          </div>
+          <!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="card-img">
+                <img src="/image/Provide Networking Opportunities.jpeg"  alt="" class="img-fluid">
+              </div>
+              <h3><a  class="stretched-link">Provide Networking Opportunities</a></h3>
+              <p>
+                The festival seeks to connect emerging talents with professionals, mentors, and industry leaders. By creating spaces for interaction, it helps participants establish valuable relationships that can lead to career growth and future collaborations. This objective ensures the festival acts as a bridge between budding artists and opportunities in their respective industries.</p>
+            </div>
+          </div>
+          <!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="card-img">
+                <img src="/image/Engage and Inspire the Community.jpeg"  alt="" class="img-fluid">
+              </div>
+              <h3><a  class="stretched-link">Engage and Inspire the Community</a></h3>
+              <p>
+                The event aims to engage the broader community by offering an entertaining, educational, and interactive experience. By involving audiences as active participants, it inspires them to support local talent and appreciate the power of creativity. This objective helps build a supportive and enthusiastic environment that celebrates artistic expression.</p>
+            </div>
+          </div>
+          <!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <div class="card-img">
+                <img src="/image/Create a Sustainable Talent Platform.jpeg" alt=""  class="img-fluid">
+              </div>
+              <h3><a  class="stretched-link">Create a Sustainable Talent Platform</a></h3>
+              <p>
+                The project envisions establishing a long-term platform for talents to grow and thrive. By organizing annual events, nurturing partnerships, and maintaining an inclusive culture, the festival seeks to leave a lasting impact. This objective ensures that future generations will continue to benefit from a system that recognizes and supports artistic potential.</p>
+            </div>
+          </div>
+          <!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!--  Call To Action Section -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Our Team</h3>
+            <p>Our team is composed of passionate and dedicated individuals who are committed to discovering and nurturing diverse talents. We come from various backgrounds and disciplines, bringing a wealth of experience and unique perspectives to the project. Our team members include students, professionals, and volunteers, all united by a shared belief in the power of creativity and the arts to bring people together and make a positive impact on society.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--  Features Section -->
+    <section id="features" class="features">
+      <div class="section-header">
+        <span>Award</span>
+        <h2>Award</h2>
+
+      </div>
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+          <div class="col-md-5">
+            <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Suprise gifts.</h3>
+            <p class="fst-italic">
+              To make the experience truly memorable, a surprise gift will be awarded to the winner as a token of appreciation and encouragement. 
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i>  Monetary Gift or Voucher</li>
+              <li><i class="bi bi-check"></i> Collaboration Opportunity</li>
+              <li><i class="bi bi-check"></i> Professional toolkit.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="/image/Portfolio Development.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3>Professional Portfolio Development</h3>
+            <p class="fst-italic">
+              Assist winners in creating professional portfolios, including high-quality photos, videos, or audio recordings of their work, to help them market themselves effectively to future opportunities.
+
+            </p>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+        <!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="/image/Award Certificates and Trophies.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Award Certificates and Trophies</h3>
+            <p>Offer official recognition through certificates, trophies, or medals to celebrate their achievements and serve as a milestone in their journey toward success. </p>
+          </div>
+        </div>
+        <!-- Features Item -->
+
+        
+      </div>
+    </section>
+    <!-- End Features Section -->
+
+
+    <!-- Testimonials Section  -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="slides-1 swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/jpg" class="testimonial-img" alt="">
+                <h3>Felix Maati</h3>
+                <h4> Founder </h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Our vision is to empower creativity and give every talented individual the opportunity to shine.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/.jpg" class="testimonial-img" alt="">
+                <h3>Eugene</h3>
+                <h4>Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  We believe that talent is a gift, and it deserves to be nurtured and celebrated.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/.jpg" class="testimonial-img" alt="">
+                <h3>Micah Mosomi</h3>
+                <h4>Designer </h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Winning is just the beginning. This gift is not only a reward, but a reminder that your talent has the power to change the world.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonialsjpg" class="testimonial-img" alt="">
+                <h3>Presenter1</h3>
+                <h4>presenter</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  This is more than a gift—it's an investment in your future. We're excited to see how you continue to shine and take your craft to new heights.
+                 
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials.jpg" class="testimonial-img" alt="">
+                <h3>Presenter2</h3>
+                <h4>presenter</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Today, we celebrate not just talent, but the hard work, dedication, and passion that went into bringing that talent to life. This surprise gift is a reflection of how much we believe in you.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+  
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Frequently Asked Questions</span>
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What types of talents are accepted in the competition?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    We accept a wide range of talents, including comedy, music, acting, dance, modeling, spoken word, poetry, screen filming, and other creative performances. We encourage diverse forms of expression.
+                  </div>
+                </div>
+              </div>
+              <!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How do I register for the talent show?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Currently, registration is done physically at the designated registration desk. Soon, we will introduce online registration for more convenience. Stay tuned for updates.
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Are group performances allowed?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Yes, group performances are welcome. However, the size and type of the group will need to be specified during registration to ensure the event logistics can accommodate your performance.
+                  </div>
+                </div>
+              </div>
+              <!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How will the winners be selected?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Winners will be chosen based on a combination of criteria, including creativity, talent, stage presence, audience engagement, and overall impact. A panel of judges will score performances, and audience votes may also contribute.
+
+
+                  </div>
+                </div>
+              </div>
+              <!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What are the prizes for winners?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Prizes may include cash awards, trophies, certificates, performance opportunities, scholarships, mentorship programs, and other surprises. Specific prizes will be announced prior to the event
+                  </div>
+                </div>
+              </div>
+              <!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Is there a fee to participate in the talent show?
+                  </button>
+                </h3>
+                <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    The participation fee, if any, will be clearly stated in the registration details. Some events may have no fees, while others may require a small contribution for event costs.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What happens if I need to cancel my participation?
+                  </button>
+                </h3>
+                <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    If you need to cancel, please inform the event organizers as soon as possible. Cancellations may be accepted up to a certain date, but failure to notify the organizers in advance may affect other participants.
+                  </div>
+                </div>
+              </div>
+              <!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Frequently Asked Questions Section -->
+
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="ticket-item">
+                      <div class="ticket-header">
+                          <h3>Regular</h3>
+                          <h4><sup>ksh</sup>0<span> / person</span></h4>
+                      </div>
+                      <ul class="ticket-body">
+                          <li><i class="bi bi-check"></i> Online booking coming soon</li>
+                          
+                      </ul>
+                      <div class="ticket-footer">
+                          <a href="javascript:void(0);" class="buy-btn" onclick="initiatePlan('Regular', 0)">Buy Now</a>
+                      </div>
+                  </div>
+              </div><!-- End Ticket Item -->
+  
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="ticket-item">
+                      <div class="ticket-header">
+                          <h3>VIP</h3>
+                          <h4><sup>ksh</sup>3,741<span> / person</span></h4>
+                      </div>
+                      <ul class="ticket-body">
+                        <li><i class="bi bi-check"></i> Online booking coming soon</li> 
+                      </ul>
+                      <div class="ticket-footer">
+                          <a href="javascript:void(0);" class="buy-btn" onclick="initiatePlan('VIP', 3741)">Buy Now</a>
+                      </div>
+                  </div>
+              </div><!-- End Ticket Item -->
+  
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="ticket-item">
+                      <div class="ticket-header">
+                          <h3>Premium</h3>
+                          <h4><sup>ksh</sup>6,321<span> / person</span></h4>
+                      </div>
+                      <ul class="ticket-body">
+                        <li><i class="bi bi-check"></i> Online booking coming soon</li>
+                      </ul>
+                      <div class="ticket-footer">
+                          <a href="javascript:void(0);" class="buy-btn" onclick="initiatePlan('Premium', 6321)">Buy Now</a>
+                      </div>
+                  </div>
+              </div><!-- End Ticket Item -->
+          </div>
+      </div>
+  </section><!-- End Pricing Section -->>
+
+  </main>
+
+  ><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Talent Hub Festival</span>
+          </a>
+          <p>Talents play a significant role in shaping the future. They go beyond professional careers by inspiring, educating, and representing the diverse cultures within society. Talents have the power to bring change, build community, and celebrate the uniqueness of individuals. They are essential in driving innovation and cultural exchange.</p>
+          <div class="social-links d-flex mt-4">
+            <a  class="twitter"><i class="bi bi-twitter"></i></a>
+            <a  class="facebook"><i class="bi bi-facebook"></i></a>
+            <a  class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#objective">Objective</a></li>
+            <li><a >Terms of service</a></li>
+            <li><a >Privacy policy</a></li>
+          </ul>
+        </div>
+
+        
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            <br>
+            Kenya<br>
+            Eldoret, UOE<br><br>
+            <strong>Phone:</strong> +2547 94577041<br>
+            <strong>Email:</strong>  felixmaati7526@gnail.com<br>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span></span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by Micah Mosomi
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a  class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
