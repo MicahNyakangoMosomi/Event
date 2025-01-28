@@ -40,9 +40,6 @@
       object-fit: cover;
     }
   </style>
-
-
-
   
 </head>
 
@@ -50,63 +47,75 @@
 
 <!-- Header -->
 <header id="header" class="header d-flex align-items-center fixed-top">
+  <!-- Main container to hold header content -->
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
+    <!-- Logo section -->
     <a href="index.html" class="logo d-flex align-items-center">
-      <h1>Talent<span>Hub Festival</span></h1>
+      <h1>Talent<span>Hub Festival</span></h1> <!-- Festival name with styled span -->
     </a>
 
-    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-    
+    <!-- Mobile navigation toggle icons -->
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i> <!-- Icon to show menu -->
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i> <!-- Icon to hide menu -->
+
+    <!-- Navigation bar -->
     <nav id="navbar" class="navbar">
       <ul>
+        <!-- Home link -->
         <li><a href="index.html" class="active">Home</a></li>
-        
+
+        <!-- Videos link -->
+        <li><a href="videos.html">Videos</a></li>
+
+        <!-- Dropdown menu for Activities -->
         <ul class="nav">
           <li class="nav-item Drivers">
-            <a class="nav-link" >
-              <span>Activities</span>
-              <i class="bi bi-chevron-down dropdown-indicator"></i>
+            <a class="nav-link">
+              <span>Activities</span> <!-- Dropdown title -->
+              <i class="bi bi-chevron-down dropdown-indicator"></i> <!-- Dropdown icon -->
             </a>
             <ul class="dropdown-menu">
 
+              <!-- Sub-dropdown for main activities -->
               <li class="dropdown">
-                <a class="dropdown-item" >
-                  <span>Our Main Activities</span>
-                  <i class="bi bi-chevron-down dropdown-indicator"></i>
+                <a class="dropdown-item">
+                  <span>Our Main Activities</span> <!-- Sub-dropdown title -->
+                  <i class="bi bi-chevron-down dropdown-indicator"></i> <!-- Sub-dropdown icon -->
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" >Comedy performances</a></li>
-                  <li><a class="dropdown-item" >Music performances</a></li>
-                  <li><a class="dropdown-item" >Dance performances</a></li>
-                  <li><a class="dropdown-item" >Spoken word and poetry</a></li>
-                  <li><a class="dropdown-item" >Art exhibitions </a></li>
-                  <li><a class="dropdown-item" >Modeling </a></li>
-                  <li><a class="dropdown-item" >Screen filming </a></li>
-                  <li><a class="dropdown-item" >many more .... </a></li>
+                  <!-- List of activities -->
+                  <li><a class="dropdown-item">Comedy performances</a></li>
+                  <li><a class="dropdown-item">Music performances</a></li>
+                  <li><a class="dropdown-item">Dance performances</a></li>
+                  <li><a class="dropdown-item">Spoken word and poetry</a></li>
+                  <li><a class="dropdown-item">Art exhibitions</a></li>
+                  <li><a class="dropdown-item">Modeling</a></li>
+                  <li><a class="dropdown-item">Screen filming</a></li>
+                  <li><a class="dropdown-item">many more ....</a></li> <!-- Placeholder for more activities -->
                 </ul>
               </li>
-              
             </ul>
           </li>
         </ul>
-        
+
+        <!-- Commented out Contact and Get a Quote links -->
         <!-- <li><a href="contact.html">Contact</a></li> -->
         <!-- <li><a class="get-a-quote" href="get-a-quote.html">Get a Quote</a></li> -->
       </ul>
-    </nav><!-- .navbar -->
+    </nav><!-- End navbar -->
 
   </div>
-</header><!-- End Header -->
+</header>
 <!-- End Header -->
+
 
   <!--  Hero Section -->
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Prepared by: <br><span class="fw-normal">Felix & Eugene</span></h2>
+          <h2 data-aos="fade-up">Talent Hub Festival</h2>
           <h2 data-aos="fade-up">Presented to: <br><span class="fw-normal">Universtity of Eldoret</span></h2>
           <p data-aos="fade-up" data-aos-delay="100">This initiative focuses on hosting a talent show, known as UOE Talent Hub Festivals, to showcase skills in areas such as comedy, music, acting, modeling, and screen filming.</p>
 
@@ -115,7 +124,7 @@
               Register now to showcase your talent!
             </p>
             <button id="get-started-btn" class="btn btn-primary">
-                <a  style="color: black;">Cooming soon</a>
+                <a  style="color: black;">Coming soon</a>
             </button>
             <button id="logout-btn" class="btn btn-primary" style="display: none;" onclick="logoutUser()">
                 Log Out
