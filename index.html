@@ -111,68 +111,86 @@
 
 
   <!--  Hero Section -->
-  <section id="hero" class="hero d-flex align-items-center">
-    <div class="container">
-      <div class="row gy-4 d-flex justify-content-between">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Talent Hub Festival</h2>
-          <h2 data-aos="fade-up">Presented to: <br><span class="fw-normal">Universtity of Eldoret</span></h2>
-          <p data-aos="fade-up" data-aos-delay="100">This initiative focuses on hosting a talent show, known as UOE Talent Hub Festivals, to showcase skills in areas such as comedy, music, acting, modeling, and screen filming.</p>
-
-          <div class="d-flex justify-content-between bg-white border border-secondary rounded p-2">
-            <p id="welcome-message" class="fw-bold text-black pt-4" style="font-size: 1.5rem;color: #000;font-weight: bold; padding-top: 1rem; text-align: center;">
-              Register now to showcase your talent!
-            </p>
-            <button id="get-started-btn" class="btn btn-primary">
-                <a  style="color: black;">Coming soon</a>
-            </button>
-            <button id="logout-btn" class="btn btn-primary" style="display: none;" onclick="logoutUser()">
-                Log Out
-            </button>
-        </div>
+  <!-- Hero Section -->
+<section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row gy-4 d-flex justify-content-between">
+      
+      <!-- Left Column - Content -->
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h2 data-aos="fade-up">Talent Hub Festival</h2>
+        <h2 data-aos="fade-up">Presented to: <br><span class="fw-normal">Universtity of Eldoret</span></h2>
         
-        
+        <!-- Description -->
+        <p data-aos="fade-up" data-aos-delay="100">
+          This initiative focuses on hosting a talent show, known as UOE Talent Hub Festivals, to showcase skills in areas such as comedy, music, acting, modeling, and screen filming.
+        </p>
 
-          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+        <!-- Registration Call-to-Action -->
+        <div class="d-flex justify-content-between bg-white border border-secondary rounded p-2">
+          <p id="welcome-message" class="fw-bold text-black pt-4" 
+             style="font-size: 1.5rem; color: #000; font-weight: bold; padding-top: 1rem; text-align: center;">
+            Register now to showcase your talent!
+          </p>
+          
+          <!-- Registration Button -->
+          <button id="get-started-btn" class="btn btn-primary">
+              <a style="color: black;">Coming soon</a>
+          </button>
+          
+          <!-- Logout Button (Initially Hidden) -->
+          <button id="logout-btn" class="btn btn-primary" style="display: none;" onclick="logoutUser()">
+              Log Out
+          </button>
+      </div>
+      
+      <!-- Statistics Section -->
+      <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
 
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Audience Engagement</p>
-              </div>
-            </div><!-- End Stats Item -->
-          
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Performancers</p>
-              </div>
-            </div><!-- End Stats Item -->
-          
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Total Episodes</p>
-              </div>
-            </div><!-- End Stats Item -->
-          
-            <div class="col-lg-3 col-6">
-              <div class="stats-item text-center w-100 h-100">
-                <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Current Season</p>
-              </div>
-            </div><!-- End Stats Item -->
-          
+          <!-- Audience Engagement -->
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Audience Engagement</p>
+            </div>
           </div>
         
-        </div>
-
-        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-        </div>
-
+          <!-- Performers Count -->
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Performers</p> <!-- Fixed Typo: Changed 'Performancers' to 'Performers' -->
+            </div>
+          </div>
+        
+          <!-- Total Episodes -->
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Total Episodes</p>
+            </div>
+          </div>
+        
+          <!-- Current Season -->
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Current Season</p>
+            </div>
+          </div>
+        
       </div>
+    
+      </div>
+
+      <!-- Right Column - Placeholder for Hero Image -->
+      <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
   <!-- End Hero Section -->
 
   <!---Start log in page-->
